@@ -17,7 +17,7 @@ const props = {
 document.getElementById('bootstrap-button')
   .addEventListener('click', () => {
     const el = window.document.createElement('app-root');
-    window.document.getElementById('bootstrap-button').appendChild(el);
+    window.document.body.appendChild(el);
 
     platformBrowserDynamic().bootstrapModule(AppModule)
       .then(module => {
